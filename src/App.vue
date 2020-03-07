@@ -1,27 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="sidebar-wrapper">
+      <side-bar></side-bar>
+    </div>
+    <div class="content-wrapper">
+      <website-list></website-list>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import WebsiteList from './components/WebsiteList.vue'
+  import SideBar from './components/SideBar.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+    components: {
+      WebsiteList,
+      SideBar
+    }
   }
-}
 </script>
 
 <style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+  @import './common/styles/flexbox'
+  .sidebar-wrapper
+    background rgb(44, 46, 47)
+    color #cccccc
 </style>
