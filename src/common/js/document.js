@@ -1,7 +1,5 @@
 // 参考文档
-function req(name) {
-  return require(`../img/${name}`)
-}
+import req from './req'
 
 const documentsite = {
   id: 'document',
@@ -23,6 +21,18 @@ const documentsite = {
       url: 'https://developer.mozilla.org/zh-CN/',
       describe: '源于开发者，服务开发者',
       imageSvg: req('mdn.png')
+    },
+    {
+      name: 'python',
+      url: 'https://docs.python.org/zh-cn/3/',
+      describe: 'python官方文档',
+      imageSvg: req('python.svg')
+    },
+    {
+      name: 'React',
+      url: 'https://reactjs.org/docs/getting-started.html',
+      describe: 'React 官方文档',
+      imageSvg: req('react.svg')
     }
   ]
 }

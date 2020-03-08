@@ -1,6 +1,5 @@
-function req(name) {
-  return require(`../img/${name}`)
-}
+// 前端工具
+import req from './req'
 
 const toolsite = {
   id: 'tool',

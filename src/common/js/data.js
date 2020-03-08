@@ -4,6 +4,7 @@ import comforeignsite from './comforeign' // 国外社区
 import documentsite from './document' // 参考文档
 import blogsite from './blog' // 知名博客
 import toolsite from './tool' // 前端工具
+import linksite from './link' // 友情链接
 
 export const categories = [
   searchsite,
@@ -11,5 +12,6 @@ export const categories = [
   comforeignsite,
   documentsite,
   blogsite,
-  toolsite
+  toolsite,
+  linksite
 ]

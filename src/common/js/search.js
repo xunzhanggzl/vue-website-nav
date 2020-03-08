@@ -1,6 +1,5 @@
-function req(name) {
-  return require(`../img/${name}`)
-}
+// 搜索引擎
+import req from './req'
 
 const searchsite = {
   id: 'search',

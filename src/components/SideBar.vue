@@ -89,6 +89,7 @@
   @media only screen and (min-width: 64rem)
     .sidebar
       padding .5rem
+      margin-top 1.5rem
       .sidebar-item-wrapper
         .sidebar-item
           text-align center

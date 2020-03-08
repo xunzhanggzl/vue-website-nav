@@ -1,7 +1,5 @@
 // 国内社区
-function req(name) {
-  return require(`../img/${name}`)
-}
+import req from './req'
 
 const communitysite = {
   id: 'community',
@@ -24,6 +22,12 @@ const communitysite = {
       url: 'https://segmentfault.com/',
       describe: '在 SegmentFault，学习技能、解决问题',
       imageSvg: req('segmentfault.svg')
+    },
+    {
+      name: '简书',
+      url: 'https://www.jianshu.com/',
+      describe: '简书- 创作你的创作',
+      imageSvg: req('jianshu.png')
     }
   ]
 }
