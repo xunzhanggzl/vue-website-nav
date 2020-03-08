@@ -4,6 +4,7 @@
       <div class="sidebar-img">
         <img src="../common/img/vue.svg">
       </div>
+      <div class="code">Code By gzl</div>
       <div class="menu">
         <svg class="icon add" aria-hidden="true">
           <use xlink:href='#icon-test12'></use>
@@ -38,6 +39,10 @@
       toggle() {
         this.toggleShow = !this.toggleShow
       }
+    },
+    created() {
+      const wid = document.body.clientWidth
+      this.toggleShow = wid >= 1024
     }
   }
 </script>
@@ -62,6 +67,8 @@
           width 100%
           height 100%
           border-radius 50%
+      .code
+        font-size 1.1rem
       .menu
         width 2rem
         height 2rem
@@ -78,4 +85,12 @@
           margin-bottom 0
         .sidebar-item-name
           padding-left .5rem
+
+  @media only screen and (min-width: 64rem)
+    .sidebar
+      padding .5rem
+      .sidebar-item-wrapper
+        .sidebar-item
+          text-align center
+          margin 1rem 0
 </style>
